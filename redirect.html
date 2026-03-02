@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>跳转中...</title>
+    <script>
+        // 获取URL中的sale参数
+        const urlParams = new URLSearchParams(window.location.search);
+        const saleId = urlParams.get('sale');
+        // 跳转到金数据表单
+        if (saleId) {
+            window.location.href = `https://3paytdcj.jsjform.com/f/EuceTV?x_field_1=${saleId}`;
+        } else {
+            window.location.href = 'https://3paytdcj.jsjform.com/f/EuceTV';
+        }
+    </script>
+</head>
+<body>
+    正在跳转至报名页面...
+</body>
+</html>
